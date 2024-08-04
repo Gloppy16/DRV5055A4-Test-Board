@@ -1,0 +1,4 @@
+"Reference","Value","Footprint","Qty","DNP","JLCPCB Part Number"
+"C2","C_0603_0.01uF","Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder","1","","C57112"
+"J1","Conn_01x03_Pin","Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical","1","",""
+"U1","DRV5055A4QDBZR","DRV5055A4:DBZ0003A_N","1","","C266123"
