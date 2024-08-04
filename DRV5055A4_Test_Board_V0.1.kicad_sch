@@ -206,108 +206,6 @@
 				)
 			)
 		)
-		(symbol "Connector:TestPoint"
-			(pin_numbers hide)
-			(pin_names
-				(offset 0.762) hide)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "TP"
-				(at 0 6.858 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "TestPoint"
-				(at 0 5.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 5.08 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 5.08 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "test point"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "test point tp"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "Pin* Test*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "TestPoint_0_1"
-				(circle
-					(center 0 3.302)
-					(radius 0.762)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "TestPoint_1_1"
-				(pin passive line
-					(at 0 0 90)
-					(length 2.54)
-					(name "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
 		(symbol "DRV5055A4:DRV5055A4QDBZR"
 			(pin_names
 				(offset 0.254)
@@ -491,7 +389,7 @@
 				)
 			)
 		)
-		(symbol "Jumper:SolderJumper_2_Open"
+		(symbol "Jumper:SolderJumper_2_Bridged"
 			(pin_numbers hide)
 			(pin_names
 				(offset 0) hide)
@@ -506,7 +404,7 @@
 					)
 				)
 			)
-			(property "Value" "SolderJumper_2_Open"
+			(property "Value" "SolderJumper_2_Bridged"
 				(at 0 -2.54 0)
 				(effects
 					(font
@@ -532,7 +430,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Solder Jumper, 2-pole, open"
+			(property "Description" "Solder Jumper, 2-pole, closed/bridged"
 				(at 0 0 0)
 				(effects
 					(font
@@ -550,7 +448,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "SolderJumper*Open*"
+			(property "ki_fp_filters" "SolderJumper*Bridged*"
 				(at 0 0 0)
 				(effects
 					(font
@@ -559,7 +457,18 @@
 					(hide yes)
 				)
 			)
-			(symbol "SolderJumper_2_Open_0_1"
+			(symbol "SolderJumper_2_Bridged_0_1"
+				(rectangle
+					(start -0.508 0.508)
+					(end 0.508 -0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
 				(arc
 					(start -0.254 1.016)
 					(mid -1.2656 0)
@@ -633,7 +542,7 @@
 					)
 				)
 			)
-			(symbol "SolderJumper_2_Open_1_1"
+			(symbol "SolderJumper_2_Bridged_1_1"
 				(pin passive line
 					(at -3.81 0 0)
 					(length 2.54)
@@ -1214,26 +1123,6 @@
 	)
 	(wire
 		(pts
-			(xy 154.94 132.08) (xy 179.07 132.08)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "499bdf2d-73c6-4530-9d13-3f693e65d7f5")
-	)
-	(wire
-		(pts
-			(xy 154.94 142.24) (xy 179.07 142.24)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4cc81c6f-0258-4116-9fdd-7f63ca9f300d")
-	)
-	(wire
-		(pts
 			(xy 140.97 106.68) (xy 123.19 106.68)
 		)
 		(stroke
@@ -1241,26 +1130,6 @@
 			(type default)
 		)
 		(uuid "956b941c-5f22-42ef-8324-43483b521960")
-	)
-	(wire
-		(pts
-			(xy 154.94 127) (xy 179.07 127)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b876c77e-9945-454c-8c84-bd58f3bd1995")
-	)
-	(wire
-		(pts
-			(xy 154.94 137.16) (xy 179.07 137.16)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d442e7ca-395c-4096-81e7-334c4240bcfa")
 	)
 	(wire
 		(pts
@@ -1282,30 +1151,7 @@
 		)
 		(uuid "ec0d7e87-8e00-4726-8421-da82277c45c1")
 	)
-	(rectangle
-		(start 135.89 118.11)
-		(end 201.93 156.21)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(uuid 1de33690-2f34-4718-ae1b-5b9998a9a24f)
-	)
-	(text "These are the tracks on the bottom of the board. \nI am using them for current capacity experimentation.\n\nThey serve no other purpose and can be removed if desired."
-		(exclude_from_sim yes)
-		(at 169.672 149.86 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(color 97 94 255 1)
-			)
-		)
-		(uuid "6cb694d5-0628-4421-a974-9e122f52d6bd")
-	)
-	(text "Optional low pass filter. \nPopulate R1 and C1 if you want to use it.\nThe default values will give a max frequnecy of about 15.9khz.\n\nBridge JP1 with solder if the snubber network is not used."
+	(text "Optional low pass filter. \nPopulate R1 and C1 if you want to use it.\nThe default values will give a max frequnecy of about 15.9khz.\n\nCut or delete the JP1 bridge if the snubber network is used."
 		(exclude_from_sim no)
 		(at 174.244 101.854 0)
 		(effects
@@ -1357,73 +1203,6 @@
 				)
 				(justify left)
 				(hide yes)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 154.94 142.24 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp yes)
-		(fields_autoplaced yes)
-		(uuid "03b83739-4e3e-4196-b4e8-6fd388fadd75")
-		(property "Reference" "TP7"
-			(at 157.48 137.6679 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "TestPoint"
-			(at 157.48 140.2079 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Library:TestPoint_THTPad_D1.0mm_Drill0.5mm_No_Silkscreen"
-			(at 160.02 142.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 160.02 142.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "test point"
-			(at 154.94 142.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "9f61a178-2e69-41e8-b31f-85b7efa73a8a")
-		)
-		(instances
-			(project "DRV5055A4_Test_Board_V0"
-				(path "/d1add80c-b64b-4dd2-afa8-d995e31ab0f1"
-					(reference "TP7")
-					(unit 1)
-				)
 			)
 		)
 	)
@@ -1587,7 +1366,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Jumper:SolderJumper_2_Open")
+		(lib_id "Jumper:SolderJumper_2_Bridged")
 		(at 144.78 81.28 0)
 		(unit 1)
 		(exclude_from_sim yes)
@@ -1604,7 +1383,7 @@
 				)
 			)
 		)
-		(property "Value" "SolderJumper_2_Open"
+		(property "Value" "SolderJumper_Closed"
 			(at 144.78 77.47 0)
 			(effects
 				(font
@@ -1612,7 +1391,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm"
+		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm"
 			(at 144.78 81.28 0)
 			(effects
 				(font
@@ -1630,7 +1409,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Solder Jumper, 2-pole, open"
+		(property "Description" "Solder Jumper, 2-pole, closed/bridged"
 			(at 144.78 81.28 0)
 			(effects
 				(font
@@ -1649,140 +1428,6 @@
 			(project ""
 				(path "/d1add80c-b64b-4dd2-afa8-d995e31ab0f1"
 					(reference "JP1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 179.07 137.16 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp yes)
-		(fields_autoplaced yes)
-		(uuid "49dfc91b-979d-425f-9d8a-55fed1378f3f")
-		(property "Reference" "TP6"
-			(at 181.61 132.5879 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "TestPoint"
-			(at 181.61 135.1279 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Library:TestPoint_THTPad_D1.0mm_Drill0.5mm_No_Silkscreen"
-			(at 184.15 137.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 184.15 137.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "test point"
-			(at 179.07 137.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "908a2eac-b4c6-46a4-a983-002a28e83f37")
-		)
-		(instances
-			(project "DRV5055A4_Test_Board_V0"
-				(path "/d1add80c-b64b-4dd2-afa8-d995e31ab0f1"
-					(reference "TP6")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 179.07 142.24 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp yes)
-		(fields_autoplaced yes)
-		(uuid "508ada3d-3740-440e-b48f-ae35b39f5a0e")
-		(property "Reference" "TP8"
-			(at 181.61 137.6679 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "TestPoint"
-			(at 181.61 140.2079 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Library:TestPoint_THTPad_D1.0mm_Drill0.5mm_No_Silkscreen"
-			(at 184.15 142.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 184.15 142.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "test point"
-			(at 179.07 142.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "5f686d4f-b7c7-49c9-9964-922a5383f3ae")
-		)
-		(instances
-			(project "DRV5055A4_Test_Board_V0"
-				(path "/d1add80c-b64b-4dd2-afa8-d995e31ab0f1"
-					(reference "TP8")
 					(unit 1)
 				)
 			)
@@ -2131,73 +1776,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 154.94 127 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp yes)
-		(fields_autoplaced yes)
-		(uuid "af610d71-186c-49f0-9a77-7d997b1f7e3a")
-		(property "Reference" "TP1"
-			(at 157.48 122.4279 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "TestPoint"
-			(at 157.48 124.9679 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Library:TestPoint_THTPad_D1.0mm_Drill0.5mm_No_Silkscreen"
-			(at 160.02 127 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 160.02 127 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "test point"
-			(at 154.94 127 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "94624aeb-d8eb-45e6-b298-cf627803701a")
-		)
-		(instances
-			(project ""
-				(path "/d1add80c-b64b-4dd2-afa8-d995e31ab0f1"
-					(reference "TP1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Connector:Conn_01x03_Pin")
 		(at 111.76 119.38 180)
 		(unit 1)
@@ -2295,7 +1873,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 123.19 105.7148 0)
 			(effects
 				(font
@@ -2341,273 +1919,6 @@
 			(project ""
 				(path "/d1add80c-b64b-4dd2-afa8-d995e31ab0f1"
 					(reference "C2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 154.94 137.16 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp yes)
-		(fields_autoplaced yes)
-		(uuid "c0819fdb-0d9b-4118-8c02-3e47467c7f0a")
-		(property "Reference" "TP5"
-			(at 157.48 132.5879 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "TestPoint"
-			(at 157.48 135.1279 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Library:TestPoint_THTPad_D1.0mm_Drill0.5mm_No_Silkscreen"
-			(at 160.02 137.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 160.02 137.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "test point"
-			(at 154.94 137.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "a935a385-83ca-4826-97b6-2a8ac015984a")
-		)
-		(instances
-			(project "DRV5055A4_Test_Board_V0"
-				(path "/d1add80c-b64b-4dd2-afa8-d995e31ab0f1"
-					(reference "TP5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 154.94 132.08 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp yes)
-		(fields_autoplaced yes)
-		(uuid "c0ded359-ea71-42f4-acac-488cc35f0d47")
-		(property "Reference" "TP3"
-			(at 157.48 127.5079 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "TestPoint"
-			(at 157.48 130.0479 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Library:TestPoint_THTPad_D1.0mm_Drill0.5mm_No_Silkscreen"
-			(at 160.02 132.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 160.02 132.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "test point"
-			(at 154.94 132.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "6033a857-07ae-4157-877e-e3d838a3d2bf")
-		)
-		(instances
-			(project "DRV5055A4_Test_Board_V0"
-				(path "/d1add80c-b64b-4dd2-afa8-d995e31ab0f1"
-					(reference "TP3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 179.07 132.08 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp yes)
-		(fields_autoplaced yes)
-		(uuid "e9038ab4-4e56-4d4f-b5de-0db160c787da")
-		(property "Reference" "TP4"
-			(at 181.61 127.5079 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "TestPoint"
-			(at 181.61 130.0479 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Library:TestPoint_THTPad_D1.0mm_Drill0.5mm_No_Silkscreen"
-			(at 184.15 132.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 184.15 132.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "test point"
-			(at 179.07 132.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "9b1f372a-4427-42a2-b63d-fd10e0e7dc79")
-		)
-		(instances
-			(project "DRV5055A4_Test_Board_V0"
-				(path "/d1add80c-b64b-4dd2-afa8-d995e31ab0f1"
-					(reference "TP4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 179.07 127 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp yes)
-		(uuid "f007e074-c510-45db-969a-ed802b33ac46")
-		(property "Reference" "TP2"
-			(at 181.61 122.4279 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "TestPoint"
-			(at 181.61 124.9679 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Library:TestPoint_THTPad_D1.0mm_Drill0.5mm_No_Silkscreen"
-			(at 184.15 127 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 184.15 127 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "test point"
-			(at 179.07 127 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "d4ee1b71-d570-41ad-9cdf-bdcfeb2ca569")
-		)
-		(instances
-			(project "DRV5055A4_Test_Board_V0"
-				(path "/d1add80c-b64b-4dd2-afa8-d995e31ab0f1"
-					(reference "TP2")
 					(unit 1)
 				)
 			)

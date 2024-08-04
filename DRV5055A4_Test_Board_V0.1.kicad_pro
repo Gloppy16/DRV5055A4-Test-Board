@@ -446,7 +446,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "DRV5055A4_Test_Board_V0.kicad_pro",
+    "filename": "DRV5055A4_Test_Board_V0.1.kicad_pro",
     "version": 1
   },
   "net_settings": {
@@ -481,7 +481,7 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "Fabrication Files/",
+      "plot": "Fabrication Files/GerberFiles",
       "pos_files": "Fabrication Files/BOM-PNP",
       "specctra_dsn": "",
       "step": "",
@@ -492,7 +492,7 @@
   },
   "schematic": {
     "annotate_start_num": 0,
-    "bom_export_filename": "Fabrication Files/BOM-PNP/DRV5055A4_Test_Board_V0.csv",
+    "bom_export_filename": "Fabrication Files/BOM-PNP/DRV5055A4_Test_Board_V0.1.csv",
     "bom_fmt_presets": [],
     "bom_fmt_settings": {
       "field_delimiter": ",",

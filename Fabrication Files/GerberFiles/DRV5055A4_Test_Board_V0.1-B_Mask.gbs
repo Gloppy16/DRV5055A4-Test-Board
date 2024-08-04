@@ -1,0 +1,22 @@
+G04 #@! TF.GenerationSoftware,KiCad,Pcbnew,8.0.4*
+G04 #@! TF.CreationDate,2024-08-04T10:49:20-05:00*
+G04 #@! TF.ProjectId,DRV5055A4_Test_Board_V0.1,44525635-3035-4354-9134-5f546573745f,rev?*
+G04 #@! TF.SameCoordinates,Original*
+G04 #@! TF.FileFunction,Soldermask,Bot*
+G04 #@! TF.FilePolarity,Negative*
+%FSLAX46Y46*%
+G04 Gerber Fmt 4.6, Leading zero omitted, Abs format (unit mm)*
+G04 Created by KiCad (PCBNEW 8.0.4) date 2024-08-04 10:49:20*
+%MOMM*%
+%LPD*%
+G01*
+G04 APERTURE LIST*
+%ADD10R,1.700000X1.700000*%
+%ADD11O,1.700000X1.700000*%
+G04 APERTURE END LIST*
+D10*
+X26000000Y-31375000D03*
+D11*
+X23460000Y-31375000D03*
+X20920000Y-31375000D03*
+M02*
